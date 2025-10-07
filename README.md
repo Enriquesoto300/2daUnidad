@@ -71,7 +71,7 @@ Permite crear objetos de notificación sin especificar la clase concreta.
 
 ---
 
-## ⚙️ Principios SOLID Aplicados
+##  Principios SOLID Aplicados
 
 * **S (Single Responsibility):**
   Cada clase tiene una única responsabilidad (por ejemplo, `Usuario` solo maneja la recepción de notificaciones).
