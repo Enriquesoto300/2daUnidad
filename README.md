@@ -8,25 +8,7 @@ El sistema simula el envío de notificaciones (correo electrónico, SMS o push) 
 
 ---
 
-##  Estructura del Proyecto
 
-```
-2daUnidad/
-│
-├── observador/
-│   ├── iobservador.py         # Interfaz del observador (Observer)
-│   ├── usuario.py             # Clase concreta que implementa IObservador
-│   └── notificacion.py        # Clase sujeto que notifica a los observadores
-│
-├── fabrica/
-│   ├── inotificacion.py       # Interfaz del producto (Factory Method)
-│   ├── email_notificacion.py  # Notificación por correo
-│   ├── sms_notificacion.py    # Notificación por SMS
-│   ├── push_notificacion.py   # Notificación Push
-│   └── notificacion_factory.py# Creador concreto (Factory)
-│
-└── observer.py                # Archivo principal del programa
-```
 
 ---
 
