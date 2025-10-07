@@ -1,20 +1,4 @@
-"""
-Sistema de Notificaciones - versión funcional en un solo archivo.
 
-Este script combina una implementación simple y funcional de:
-- Patrón Observer: Subject (Notificacion) y Observer (Usuario / IObservador)
-- Patrón Factory Method: NotificacionFactory que crea INotificacion concretas
-- Principios SOLID: breves comentarios donde aplican (SRP, DIP, O/C, L, I)
-
-Ejecuta:
-    python SistemaNotificaciones_funcional.py
-
-Salida esperada (ejemplo):
-    📧 [Email] Enviando correo electrónico: Nueva actualización disponible (EMAIL)
-    [Notificación para Ana]: Nueva actualización disponible (EMAIL)
-    [Notificación para Carlos]: Nueva actualización disponible (EMAIL)
-    ...
-"""
 
 from abc import ABC, abstractmethod
 from typing import List
@@ -104,7 +88,7 @@ class PushNotificacion(INotificacion):
 
     def enviar(self, mensaje: str) -> None:
         # Integración real con Firebase/Apple push en implementación real.
-        print(f"🔔 [Push] Enviando notificación push: {mensaje}")
+        print(f" [Push] Enviando notificación push: {mensaje}")
 
 
 class NotificacionFactory:
